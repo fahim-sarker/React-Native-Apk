@@ -1,12 +1,41 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import React from "react";
+import { View, Text, ScrollView } from "react-native";
 
-const service = () => {
+const Service = () => {
   return (
-    <View>
-      <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere hic cupiditate sequi ad doloribus mollitia et veritatis distinctio sint a veniam esse, aspernatur, eius saepe voluptatum. Vero dolores distinctio quasi voluptatem dolorem quo commodi, veritatis perferendis minima nam recusandae libero magnam consequuntur ipsum hic reprehenderit officia? Repellat libero, vitae optio doloremque natus dolores repellendus, doloribus laboriosam molestias, magni perferendis eligendi? Modi eaque aliquid impedit iusto. Quas praesentium ipsam autem velit reiciendis laboriosam minus quia amet illum fugit rerum consequuntur sint voluptates qui, beatae tenetur similique excepturi! Voluptates sunt magni eum nulla doloribus, velit temporibus corrupti vel voluptate maiores a ducimus sit voluptas nemo voluptatum tempore similique quas maxime at illo fugiat ut suscipit. Aut quae ipsum praesentium nemo tempore quibusdam numquam ex consequuntur atque. Culpa repudiandae voluptas rerum inventore recusandae vel nihil dolorum molestiae ut corporis, perspiciatis hic voluptate mollitia ipsa esse illo blanditiis voluptates eveniet molestias tempora laudantium quisquam est. Laboriosam, nulla ipsum voluptates magni molestias tempore, veniam ea tenetur ducimus sunt commodi maiores modi. Sint nam iusto iste amet, impedit vel quis dignissimos a libero adipisci rem ut officiis eveniet nihil quae corporis facilis illo! Ut ipsa consequatur debitis quae nemo corporis assumenda mollitia voluptas dignissimos, minima recusandae harum dolorum unde dolor commodi sequi sunt eveniet beatae neque vero quia laboriosam inventore. Delectus, eos doloremque consectetur atque fugit aut sequi neque, temporibus vel rem aliquam sint omnis dolorem voluptate, odit magnam ducimus ipsam facilis voluptas ipsa enim libero rerum! Itaque perferendis odio assumenda laboriosam dolore facere, quasi consectetur numquam rerum eaque maiores delectus obcaecati saepe nesciunt suscipit illum aspernatur officia veniam modi deserunt commodi vero. Suscipit ipsam facere quasi sequi iste deleniti incidunt atque illo neque ex consectetur ipsa quis sit voluptatum quod ea fugit dolorum culpa dolorem, ab corporis adipisci corrupti veritatis nisi? Aliquid, pariatur neque libero odio quidem suscipit odit officia tempora itaque magni ipsum dolor consectetur corporis voluptate. Quas id, accusantium in nobis tempora ipsam facere iusto culpa dolorem aliquid alias ab? Temporibus adipisci qui quae beatae provident itaque nesciunt dolor, porro veritatis quaerat, reiciendis vel rerum iure recusandae nulla maxime natus eum. Ab distinctio dolor quae nam error, architecto eveniet iure excepturi veniam sequi nemo inventore dolorum delectus provident obcaecati expedita! Tenetur, placeat illo voluptas commodi neque quos molestias officia veniam esse natus velit ipsa eius cum cumque eaque sed dolor architecto consequatur repellat reiciendis! Illo assumenda repudiandae praesentium aliquid dolore quam, rerum, sit, nihil maiores explicabo maxime at vitae perferendis debitis consectetur eaque? Pariatur officia perferendis rem at cum! Modi velit minus, accusantium iusto laboriosam earum sunt voluptatum facere libero vel aliquam dolore commodi, fuga pariatur officia illo sequi? Expedita nostrum eaque hic est incidunt. Est assumenda eveniet, reiciendis quidem unde enim hic aut eius fugiat architecto ratione quam quisquam nemo officia neque veniam ad adipisci aperiam, quos commodi rem quaerat animi. Consequuntur quaerat fugit temporibus, reiciendis consectetur velit, nostrum quisquam libero molestiae praesentium corporis repellendus architecto eius ipsa unde veritatis, illum doloribus amet dolores reprehenderit accusamus. Debitis vel quaerat molestias cum in?</Text>
-    </View>
-  )
-}
+    <ScrollView className="flex-1 bg-white p-5">
+      <Text className="text-3xl font-bold text-gray-800 mb-4">
+        Our Services
+      </Text>
 
-export default service
+      <Text className="text-gray-600 mb-6">
+        We provide top-notch services to help your business grow. Our team is
+        dedicated to delivering reliable solutions tailored to your needs.
+      </Text>
+
+      <View className="space-y-4">
+        <View className="flex flex-row items-center bg-red-100 p-4 rounded-lg">
+          <View className="w-10 h-10 bg-red-500 rounded-full mr-4"></View>
+          <Text className="text-gray-800 font-semibold">Consulting</Text>
+        </View>
+
+        <View className="flex flex-row items-center bg-green-100 p-4 rounded-lg">
+          <View className="w-10 h-10 bg-green-500 rounded-full mr-4"></View>
+          <Text className="text-gray-800 font-semibold">Development</Text>
+        </View>
+
+        <View className="flex flex-row items-center bg-blue-100 p-4 rounded-lg">
+          <View className="w-10 h-10 bg-blue-500 rounded-full mr-4"></View>
+          <Text className="text-gray-800 font-semibold">Design</Text>
+        </View>
+
+        <View className="flex flex-row items-center bg-yellow-100 p-4 rounded-lg">
+          <View className="w-10 h-10 bg-yellow-500 rounded-full mr-4"></View>
+          <Text className="text-gray-800 font-semibold">Support</Text>
+        </View>
+      </View>
+    </ScrollView>
+  );
+};
+
+export default Service;
