@@ -18,7 +18,6 @@ const Contact = () => {
       Alert.alert("Error", "Please fill all fields");
       return;
     }
-    // For now, just show an alert. You can integrate API submission here.
     Alert.alert("Success", "Message sent successfully!");
     setName("");
     setEmail("");
