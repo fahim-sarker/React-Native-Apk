@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { Text, View, Pressable } from "react-native";
+import { Text, View, Pressable } from "react-native";                
 
 const Navbar = () => {
   const router = useRouter();
@@ -10,7 +10,7 @@ const Navbar = () => {
     <View className="bg-black p-2 flex flex-row justify-around">
       <Pressable className="items-center" onPress={() => router.push("/")}>
         <Ionicons name="home-outline" size={26} color="white" />
-        <Text className="text-white text-xs">Home</Text>    
+        <Text className="text-white text-xs">Home</Text>     
       </Pressable>
 
       <Pressable className="items-center" onPress={() => router.push("/about")}>
