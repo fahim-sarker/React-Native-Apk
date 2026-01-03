@@ -30,7 +30,7 @@ const Navbar = () => {
         className="items-center"
         onPress={() => router.push("/contact")}
       >
-        <Ionicons name="call-outline" size={26} color="white" />
+        <Ionicons name="call-outline" size={25} color="white" />
         <Text className="text-white text-xs">Contact</Text>
       </Pressable>
     </View>
